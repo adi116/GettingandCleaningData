@@ -45,7 +45,7 @@ The run_analysis.R script produces the following data sets from the original exp
 - Subject	- The volunteer who performed the activity for each window sample. The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years.
 - Activity.Name	- The activity performed by a volunteer (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)
 
-#####*The column headings description for each measurement is derived from the following:*
+#####*Use the following guide to derive the column headings description for each measurement:*
 - t	- Time domain signal captured at a constant rate of 50 Hz
 - f	- Frequency domain signals applying Fast Fourier Transform (FFT) to some of the signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag.
   
