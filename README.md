@@ -14,3 +14,11 @@ The run_analysis.R will do the following upon execution:
 - Merges the processed data set from train and test folders to create one data set and writes into a file (step_4.txt)
 -  Summarizes the data set created above (step_4.txt) with the average of each variable for each activity and each subject, and writes into a file (step_5.txt)
 
+## References:
+Use of this dataset in publications must be acknowledged by referencing the following publication:
+
+Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
+
+This dataset is distributed AS-IS and no responsibility implied or explicit can be addressed to the authors or their institutions for its use or misuse. Any commercial use is prohibited.
+
+Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita. November 2012.
