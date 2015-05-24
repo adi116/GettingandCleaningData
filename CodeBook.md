@@ -80,7 +80,7 @@ The run_analysis.R script produces the following data sets from the original exp
 6. tGravityAcc.mean...X
 7. tGravityAcc.mean...Y
 8. tGravityAcc.mean...Z
-9	 tBodyAccJerk.mean...X
+9.	 tBodyAccJerk.mean...X
 10. tBodyAccJerk.mean...Y
 11. tBodyAccJerk.mean...Z
 12. tBodyGyro.mean...X
