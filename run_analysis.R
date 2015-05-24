@@ -5,15 +5,6 @@
 # From the data set in step 4, creates a second, independent tidy data set with the average of each 
 # variable for each activity and each subject.
 
-# Human Activity Recognition Using Smartphones Dataset source:
-# Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. 
-# Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. 
-# International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
-# This dataset is distributed AS-IS and no responsibility implied or explicit can be addressed to the authors 
-# or their institutions for its use or misuse. Any commercial use is prohibited.
-# Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita. November 2012.
-
-
 # ==========
 # Initialise
 # ==========
@@ -25,7 +16,7 @@ step4FilePath <- file.path(getwd(), "step_4.txt")
 step5FilePath <- file.path(getwd(), "step_5.txt")
 zipFilePath <- "http://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
 
-# Download and unzip file if the data set doesn't exist
+# Download and unzip file if 'UCI HAR Dataset' set doesn't exist in the working directory
 if (!file.exists(file.path(getwd(), courseProjectFilePath))){
     temp <- tempfile()
     download.file(zipFilePath, temp)
@@ -94,6 +85,7 @@ mergeFilesIntoDataFrame <- function(sourceFolder){
     outputDF <- select(combinedDFActivityLabel, Subject, Activity.Name, contains("mean"), contains("std"), -contains("angle"), -contains("meanFreq"))
     # rename columns to remve concatenation of number and proper column name. At this stage there is no more duplicate column names
     names(outputDF) <- gsub(".*_", "", names(outputDF))
+    # rename *BodyBody* columns  with Body
     names(outputDF) <- gsub("BodyBody", "Body", names(outputDF))
     return(outputDF)
 }
