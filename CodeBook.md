@@ -38,7 +38,8 @@ The run_analysis.R script produces the following data sets from the original exp
 - the processed test and train data sets were then merged into one data set
 - during the process, the column names has to be renamed to a proper variable name, '()' and spaces were replaced by dots. Duplicate column names were addressed by concatenating column number and column name. The column number was later removed once the duplicate columns have been removed.
 - column names with '*BodyBody*' were replaced by '*Body*' to prevent any confusion with the column naming convention
-- only the mean and standard deviation calculations are included in the output
+- only the mean and standard deviation calculations are included in the output (step_4.txt)
+- Based on the first data set (also shown as step_4.txt), a second data set (step_5.txt) was created that shows the average of each measurement for each activity and each subject
 
 ###Data Dictionary:
 
