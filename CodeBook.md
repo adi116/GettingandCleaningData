@@ -34,21 +34,21 @@ The run_analysis.R script produces the following data sets from the original exp
 - a tidy data set based on the first data set with the average of each variable for each activity and each subject.
 
 ###Modifications from the original data set:
-- subject, X, and Y data sets from a folder (test or train) were merged into one data set and assigns a descriptive activity label from activity_labels.txt
-- the processed test and train data sets were then merged into one data set
-- during the process, the column names has to be renamed to a proper variable name, '()' and spaces were replaced by dots. Duplicate column names were addressed by concatenating column number and column name. The column number was later removed once the duplicate columns have been removed.
+- subject, X, and Y data sets from a folder (test or train) were merged into one data set and were assigned with a descriptive activity label from activity_labels.txt.
+- the processed test and train data sets were then merged into one data set.
+- during the process, the column names has to be renamed to a proper variable name, '()' and spaces were replaced by dots. Duplicate column names were addressed by concatenating column number and column name. The column number was later removed once the 'duplicated' columns have been removed.
 - column names with '*BodyBody*' were replaced by '*Body*' to prevent any confusion with the column naming convention
-- only the mean and standard deviation calculations are included in the output (step_4.txt)
-- Based on the first data set (also shown as step_4.txt), a second data set (step_5.txt) was created that shows the average of each measurement for each activity and each subject
+- only the mean and standard deviation calculations are included in the output (step_4.txt).
+- based on the first data set (also shown as step_4.txt), a second data set (step_5.txt) was created that shows the average of each measurement for each activity and each subject.
 
 ###Data Dictionary:
 
-- Subject	- The volunteer who performed the activity for each window sample. The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years.
+- Subject	- The volunteer who performed the activity for each window sample. The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years
 - Activity.Name	- The activity performed by a volunteer (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)
 
 #####*Use the following guide to derive the column headings description for each measurement:*
 - t	- Time domain signal captured at a constant rate of 50 Hz
-- f	- Frequency domain signals applying Fast Fourier Transform (FFT) to some of the signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag.
+- f	- Frequency domain signals applying Fast Fourier Transform (FFT) to some of the signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag
   
 - BodyAcc	- Body acceleration 
 - GravityAcc - Gravity acceleration
